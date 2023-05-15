@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>업로드 예제</title>
+</head>
+<body>
+<h1>Form 업로드 예제</h1>
+<form method="post" enctype="multipart/form-data">
+<!--    multipart/form-data 데이터가 크니까 여러번쪼개서 보냄(요청 자체는 한 번)
+  action = form에서 subimt이 발생했을 때 요청방식을 지정-->
+    <input name="file" type="file">
+    <input type="submit" value="업로드">
+</form>
+</body>
+</html>
